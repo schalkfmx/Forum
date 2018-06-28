@@ -1,0 +1,74 @@
+Dec 28, 2017 9:36:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Dec 28, 2017 9:36:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Dec 28, 2017 9:36:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 9:36:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 10:20:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 10:20:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 10:21:35 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 10:21:35 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:13:21 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:13:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:13:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:14:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:14:32 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:15:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:15:31 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:16:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:16:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:18:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:18:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:19:04 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:19:04 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:24:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:24:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:41:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:41:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:42:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:42:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:42:39 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:42:39 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:44:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:44:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:51:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:51:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:51:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:51:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Dec 28, 2017 11:59:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 28, 2017 11:59:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'

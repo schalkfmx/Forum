@@ -1,0 +1,316 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_06-b05 (Sun Microsystems Inc.)
+Implementation-Title: Web Services Interoperable Technologies
+Implementation-Version: 1.0
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+probe-provider-class-names: com.sun.xml.ws.transport.http.servlet.JAXW
+ SRIDeploymentProbeProvider,com.sun.xml.ws.transport.http.servlet.JAXW
+ SRIServletProbeProvider
+DynamicImport-Package: org.glassfish.flashlight.provider
+Build-Id: 11/09/2009 12:59 PM(java_re)
+Build-Version: WSIT-Runtime 2.0-11/09/2009 12:59 PM(java_re)-SNAPSHOT
+Major-Version: 2.0
+Class-Path: webservices-api.jar webservices-extra.jar webservices-rt_l
+ 10n.jar webservices-rt_ja.jar webservices-rt_zh.jar webservices-rt_fr
+ .jar webservices-rt_de.jar webservices-rt_es.jar webservices-rt_it.ja
+ r webservices-rt_sw.jar webservices-rt_ko.jar webservices-rt_zh_TW.ja
+ r
+
+Name: FastInfoset.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: ITU-T Rec. X.891 | ISO/IEC 24824-1 (Fast Infoset)
+Specification-Version: 1.0
+Implementation-Title: Fast Infoset Implementation
+Implementation-Version: 1.2.8
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.fastinfoset
+Build-Id: hudson-fi-46
+
+Name: gmbal-api-only.jar
+Manifest-Version: 1.0
+Bundle-Name: gmbal-api-only
+Created-By: 1.5.0_20 (Apple Inc.)
+Private-Package: org.glassfish.gmbal.util
+Import-Package: javax.management,javax.management.modelmbean,org.glass
+ fish.gmbal
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: gmbal-api-only
+Tool: Bnd-0.0.356
+Bnd-LastModified: 1257796460853
+Export-Package: org.glassfish.gmbal;uses:="javax.management,javax.mana
+ gement.modelmbean"
+Bundle-Version: 3.0.0.b022
+
+Name: gmbal.jar
+Manifest-Version: 1.0
+Bundle-Name: gmbal
+Created-By: 1.5.0_20 (Apple Inc.)
+Private-Package: org.glassfish.gmbal.impl,org.glassfish.gmbal.typelib,
+ org.glassfish.gmbal.generic,org.glassfish.gmbal.util,org.glassfish.gm
+ bal.logex
+Import-Package: javax.management,javax.management.modelmbean,javax.man
+ agement.openmbean,org.glassfish.external.amx,org.glassfish.external.s
+ tatistics,org.glassfish.gmbal
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: gmbal
+Tool: Bnd-0.0.356
+Include-Resource: org/glassfish/gmbal/logex/LogStrings.properties=../b
+ uild/classes/org/glassfish/gmbal/logex/LogStrings.properties
+Bnd-LastModified: 1257796461207
+Export-Package: org.glassfish.gmbal;uses:="javax.management,javax.mana
+ gement.modelmbean"
+Bundle-Version: 3.0.0.b022
+
+Name: jaxb-impl.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: Java Architecture for XML Binding
+Specification-Version: 2.2
+Specification-Vendor: Sun Microsystems, Inc.
+Implementation-Title: JAXB Reference Implementation
+Implementation-Version: 2.2
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.bind
+Build-Id: hudson-jaxb-ri-2.2-146
+Class-Path: jaxb-api.jar activation.jar jsr173_1.0_api.jar jaxb1-impl.
+ jar
+
+Name: com.sun.xml.bind.v2.runtime
+Implementation-Version: hudson-jaxb-ri-2.2-146
+
+Name: jaxb1-impl.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.2
+Created-By: 1.5.0_01-b08 (Sun Microsystems Inc.)
+Specification-Title: Java Architecture for XML Binding
+Specification-Version: 2.0
+Specification-Vendor: Sun Microsystems, Inc.
+Implementation-Title: JAXB Reference Implementation
+Implementation-Version: 2.0
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.bind
+Build-Id: 08/29/2005 05:42 PM(root)
+
+Name: jaxr-impl.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 14.1-b02-92 (Apple Inc.)
+Specification-Title: Java API for XML Registries
+Specification-Version: 1.0
+Implementation-Title: JAXR Implementation
+Implementation-Version: 1.0.6
+Implementation-Vendor: Sun Microsystems Inc
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.registry
+Class-Path: jaxr-api.jar saaj-impl.jar jaxb-impl.jar
+
+Name: jaxrpc-api.jar
+Manifest-Version: 1.0
+Specification-Title: Java API for XML Based RPC
+Specification-Version: 1.1
+Implementation-Title: Java API for XML Based RPC Reference Implementat
+ ion
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+Extension-Name: javax.xml.rpc
+
+Name: jaxrpc-impl.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.5.4
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: Java API for XML Based RPC
+Specification-Version: 1.1
+Implementation-Title: JAXRPC Implementation
+Implementation-Version: 1.1.3_01
+Implementation-Vendor: Sun Microsystems Inc
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.rpc
+Class-Path: jaxrpc-spi.jar ../../private/share/lib/jaxrpc-spi.jar saaj
+ -api.jar saaj-impl.jar jax-qname.jar namespace.jar relaxngDatatype.ja
+ r ../../private/share/lib/relaxngDatatype.jar xsdlib.jar ../../privat
+ e/share/lib/xsdlib.jar FastInfoset.jar ../../../opt/SUNWjax/share/lib
+ /FastInfoset.jar jsr173_api.jar
+
+Name: jaxrpc-spi.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.5.4
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: Java API for XML Based RPC
+Specification-Version: 1.1
+Implementation-Title: JAXRPC Implementation
+Implementation-Version: 1.1.3_01
+Implementation-Vendor: Sun Microsystems Inc
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.rpc
+
+Name: jaxws-rt.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: The Java API for XML Web Services
+Specification-Version: 2.2
+Implementation-Title: JAX-WS Implementation
+Implementation-Version: 2.2
+Implementation-Vendor: Sun Microsystems Inc
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.ws
+probe-provider-class-names: com.sun.xml.ws.transport.http.servlet.JAXW
+ SRIDeploymentProbeProvider
+Build-Id: hudson-740
+Build-Version: JAX-WS RI 2.2-hudson-740-
+Major-Version: 2.2
+Class-Path: jaxws-api.jar jsr181-api.jar jsr250-api.jar saaj-api.jar s
+ aaj-impl.jar jsr173_api.jar sjsxp.jar woodstox.jar resolver.jar jaxb-
+ api.jar jaxb-impl.jar activation.jar stax-ex.jar streambuffer.jar sta
+ x-utils.jar policy.jar gmbal-api-only.jar management-api.jar
+
+Name: jsr173_api.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.2
+Created-By: 1.5.0-b64 (Sun Microsystems Inc.)
+
+Name: management-api.jar
+Manifest-Version: 1.0
+Bundle-Name: management-api
+Created-By: 1.5.0_20 (Apple Inc.)
+Import-Package: javax.management,javax.management.remote,org.glassfish
+ .external.amx,org.glassfish.external.arc,org.glassfish.external.probe
+ .provider,org.glassfish.external.probe.provider.annotations,org.glass
+ fish.external.statistics,org.glassfish.external.statistics.annotation
+ s,org.glassfish.external.statistics.impl
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: management-api
+Tool: Bnd-0.0.356
+Bnd-LastModified: 1257796462878
+Export-Package: org.glassfish.external.probe.provider.annotations,org.
+ glassfish.external.probe.provider,org.glassfish.external.statistics,o
+ rg.glassfish.external.statistics.impl;uses:="org.glassfish.external.s
+ tatistics",org.glassfish.external.statistics.annotations,org.glassfis
+ h.external.amx;uses:="javax.management,org.glassfish.external.arc,jav
+ ax.management.remote",org.glassfish.external.arc
+Bundle-Version: 3.0.0.b011
+
+Name: mimepull.jar
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hudson
+Build-Jdk: 1.5.0_12
+Hudson-Build-Number: 65
+Hudson-Project: mimepull
+Hudson-Version: 1.242-SNAPSHOT (private-08/04/2008 05:58-kohsuke)
+
+Name: policy.jar
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hudson
+Build-Jdk: 1.5.0_12
+Implementation-Title: policy
+Implementation-Version: 1.2-SNAPSHOT
+Implementation-Vendor-Id: com.sun.xml.ws
+Implementation-Vendor: Sun Microsystems, Inc.
+Build-Id: 2009-10-07_06-23-22
+Build-Tag: hudson-policy-core-2310
+
+Name: resolver.jar
+Manifest-Version: 1.0
+Created-By: 1.5.0_01 (Sun Microsystems Inc.)
+
+Name: saaj-impl.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: SOAP with Attachments API for Java
+Specification-Version: 1.3
+Implementation-Title: SAAJ Implementation
+Implementation-Version: 1.3.4-SNAPSHOT
+Implementation-Vendor: Sun Microsystems Inc
+Implementation-Vendor-Id: com.sun
+Build-Id: hudson-300-2009-11-02
+Extension-Name: com.sun.xml.messaging.saaj
+Class-Path: saaj-api.jar activation.jar
+
+Name: sjsxp.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.2
+Created-By: 1.4.2_11-b06 (Sun Microsystems Inc.)
+Specification-Title: Streaming APIs for XML (JSR 173)
+Specification-Version: 1.0
+Implementation-Title: Sun Java Streaming XML Parser (SJSXP)
+Implementation-Version: 1.0.1-04/01/2008 04:49 PM(hudson)
+Implementation-Vendor: Sun Microsystems, Inc.
+Extension-Name: com.sun.xml.stream
+Build-Id: 04/01/2008 04:49 PM(hudson)
+
+Name: stax-ex.jar
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hudson
+Build-Jdk: 1.5.0_06
+
+Name: stax-utils.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.5.0_01-b08 (Sun Microsystems Inc.)
+
+Name: streambuffer.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.2
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Implementation-Title: XML Stream Buffer Implementation
+Implementation-Version: 0.9
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+Extension-Name: com.sun.xml.stream.buffer
+Build-Id: hudson-xmlstreambuffer-270
+
+Name: txnannprocessor.jar
+Manifest-Version: 1.0
+Created-By: 1.5.0_04 (Sun Microsystems Inc.)
+
+Name: woodstox.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.4.2_03-b02 (Sun Microsystems Inc.)
+Built-By: tatu
+Specification-Title: StAX 1.0 API
+Specification-Version: 1.0
+Specification-Vendor: http://jcp.org/en/jsr/detail?id=173
+Implementation-Title: WoodSToX XML-processor
+Implementation-Version: 3.2.1
+Implementation-Vendor: woodstox.codehaus.org
+
+Name: xmlsec.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Built-By: mullan
+
+Name: xmlsec
+Implementation-Title: Apache-XML-Security-J
+Implementation-Version: 1.4.2 July 16 2009
+Implementation-Vendor: Apache Software Foundation
+
+Name: xws-security.jar
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+Specification-Title: XML and Web Services Security (Non-standard API)
+Implementation-Title: XML and Web Services Security Implementation
+Implementation-Version: 3.1
+Implementation-Vendor: Sun Microsystems, Inc.
+Implementation-Vendor-Id: com.sun
+Build-Id: hudson-745-November 9 2009
+Extension-Name: com.sun.xml.wss
+Class-Path: xmlsec.jar saaj-api.jar saaj-impl.jar mail.jar
+

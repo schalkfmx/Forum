@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://Server/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Server/">
+
+<xs:element name="checkDetails" type="tns:checkDetails" />
+
+<xs:element name="checkDetailsResponse" type="tns:checkDetailsResponse" />
+
+<xs:element name="connect" type="tns:connect" />
+
+<xs:element name="connectResponse" type="tns:connectResponse" />
+
+<xs:element name="disconnect" type="tns:disconnect" />
+
+<xs:element name="disconnectResponse" type="tns:disconnectResponse" />
+
+<xs:element name="getPWord" type="tns:getPWord" />
+
+<xs:element name="getPWordResponse" type="tns:getPWordResponse" />
+
+<xs:element name="postComment" type="tns:postComment" />
+
+<xs:element name="postCommentResponse" type="tns:postCommentResponse" />
+
+<xs:element name="postReply" type="tns:postReply" />
+
+<xs:element name="postReplyResponse" type="tns:postReplyResponse" />
+
+<xs:element name="postTopic" type="tns:postTopic" />
+
+<xs:element name="postTopicResponse" type="tns:postTopicResponse" />
+
+<xs:element name="register" type="tns:register" />
+
+<xs:element name="registerResponse" type="tns:registerResponse" />
+
+<xs:element name="retrieveComments" type="tns:retrieveComments" />
+
+<xs:element name="retrieveCommentsResponse" type="tns:retrieveCommentsResponse" />
+
+<xs:element name="retrieveReplies" type="tns:retrieveReplies" />
+
+<xs:element name="retrieveRepliesResponse" type="tns:retrieveRepliesResponse" />
+
+<xs:element name="retrieveTopics" type="tns:retrieveTopics" />
+
+<xs:element name="retrieveTopicsResponse" type="tns:retrieveTopicsResponse" />
+
+<xs:element name="updateInfo" type="tns:updateInfo" />
+
+<xs:element name="updateInfoResponse" type="tns:updateInfoResponse" />
+
+<xs:complexType name="postComment">
+<xs:sequence>
+<xs:element name="comment" type="xs:string" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+<xs:element name="topicID" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postCommentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postTopic">
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="0" />
+<xs:element name="description" type="xs:string" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postTopicResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="disconnect">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="disconnectResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="checkDetails">
+<xs:sequence>
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+<xs:element name="pWord" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkDetailsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postReply">
+<xs:sequence>
+<xs:element name="reply" type="xs:string" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+<xs:element name="commentID" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postReplyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateInfo">
+<xs:sequence>
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+<xs:element name="pWord" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="securityA" type="xs:string" minOccurs="0" />
+<xs:element name="gender" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveComments">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="retrieveCommentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPWord">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="securityA" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPWordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveTopics">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="retrieveTopicsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="register">
+<xs:sequence>
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+<xs:element name="pWord" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="securityA" type="xs:string" minOccurs="0" />
+<xs:element name="gender" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveReplies">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="retrieveRepliesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="connect">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="connectResponse">
+<xs:sequence />
+</xs:complexType>
+</xs:schema>

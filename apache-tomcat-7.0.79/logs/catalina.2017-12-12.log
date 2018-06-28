@@ -1,0 +1,1756 @@
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.79
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jun 26 2017 16:25:20 UTC
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.79.0
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 7
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.1
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          x86
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files (x86)\Java\jdk1.7.0_55\jre
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.7.0_55-b13
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\logging.properties
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\endorsed
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\temp
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+Dec 12, 2017 8:34:53 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:34:53 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 744 ms
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.79
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Bakery.xml
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Bakery\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:34:53 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Bakery]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Bakery.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Bakery]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:34:53 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Bakery.xml has finished in 120 ms
+Dec 12, 2017 8:34:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectClient.xml
+Dec 12, 2017 8:34:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectClient.xml has finished in 382 ms
+Dec 12, 2017 8:34:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectServices.xml
+Dec 12, 2017 8:34:56 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:34:57 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:34:59 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/BidProjectServices-BidProjectWebservice-BidProjectWebservicePort
+Dec 12, 2017 8:35:00 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectServices.xml has finished in 5,669 ms
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ClientWebService.xml
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ClientWebService.xml has finished in 505 ms
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProject.xml
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\AJP - Project\ForumProject\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProject]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProject.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProject]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProject.xml has finished in 7 ms
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectClient.xml
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\ForumProjectClient\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectClient]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectClient.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectClient]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectClient.xml has finished in 65 ms
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectServices.xml
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\ForumProjectServices\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectServices]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectServices.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectServices]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectServices.xml has finished in 61 ms
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Hello.xml
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Hello\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Hello]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Hello.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Hello]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Hello.xml has finished in 60 ms
+Dec 12, 2017 8:35:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml
+Dec 12, 2017 8:35:01 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:35:03 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:35:03 AM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Dec 12, 2017 8:35:04 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:35:04 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:35:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml has finished in 3,537 ms
+Dec 12, 2017 8:35:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\JavaMail.xml
+Dec 12, 2017 8:35:04 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\JavaMail\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:04 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JavaMail]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\JavaMail.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JavaMail]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\JavaMail.xml has finished in 32 ms
+Dec 12, 2017 8:35:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\TempHost.xml
+Dec 12, 2017 8:35:11 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:35:12 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:35:14 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/TempHost-wsHost-wsHostPort
+Dec 12, 2017 8:35:14 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:35:14 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\TempHost.xml has finished in 9,772 ms
+Dec 12, 2017 8:35:14 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\testerJavaScript.xml
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\testerJavaScript.xml has finished in 1,122 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4.xml
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit4\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4.xml has finished in 82 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4Exercises.xml
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit4Exercises\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4Exercises]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4Exercises.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4Exercises]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4Exercises.xml has finished in 70 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5.xml
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit5\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5.xml has finished in 61 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5Servlet.xml
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit5Servlet\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5Servlet]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5Servlet.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5Servlet]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5Servlet.xml has finished in 61 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Web page.xml
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Web page re\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Web page]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Web page.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Web page]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Web page.xml has finished in 67 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\docs
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\docs has finished in 43 ms
+Dec 12, 2017 8:35:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\examples
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\examples has finished in 1,473 ms
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\host-manager
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\host-manager has finished in 72 ms
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\manager
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\manager has finished in 49 ms
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\ROOT
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\ROOT has finished in 44 ms
+Dec 12, 2017 8:35:17 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:35:17 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:35:17 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 23521 ms
+Dec 12, 2017 8:35:18 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:35:18 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:35:18 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:35:19 AM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/HostWebService]
+Dec 12, 2017 8:35:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml
+Dec 12, 2017 8:35:20 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:35:21 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:35:22 AM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Dec 12, 2017 8:35:22 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:35:22 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:35:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml has finished in 3,187 ms
+Dec 12, 2017 8:35:22 AM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HostWebService]] after start() had already been called. The second call will be ignored.
+Dec 12, 2017 8:38:23 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:38:23 AM WServices.hostWS signUp
+INFO: SignUp of user with email : ettiene@gmail.com and sessionID : -13-54-1195102-17-6498739-10-84-12275118-26
+Dec 12, 2017 8:38:38 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:38:38 AM WServices.hostWS updates
+INFO: Checking updates for sessionID -13-54-1195102-17-6498739-10-84-12275118-26
+Dec 12, 2017 8:38:38 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:38:38 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:38:38 AM WServices.hostWS getUserItems
+INFO: Retrieval of UserItems of user : -13-54-1195102-17-6498739-10-84-12275118-26
+Dec 12, 2017 8:38:53 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:38:53 AM WServices.hostWS getUpdateInfo
+INFO: UpdateInfo retrieved for sessionID -13-54-1195102-17-6498739-10-84-12275118-26
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:40:06 AM WServices.hostWS activeItems
+INFO: All items fetch for userID -13-54-1195102-17-6498739-10-84-12275118-26
+Dec 12, 2017 8:40:53 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:40:53 AM WServices.hostWS selectedItem
+INFO: Item with ID 17selected.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass bidMade
+SEVERE: --------------------- BID MADE ---------------------
+Dec 12, 2017 8:41:06 AM WServices.DBClass bidMade
+INFO: Bid made on item PK = 17
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:41:06 AM WServices.hostWS activeItems
+INFO: All items fetch for userID -13-54-1195102-17-6498739-10-84-12275118-26
+Dec 12, 2017 8:42:48 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 12, 2017 8:42:48 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:42:48 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:42:49 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 12, 2017 8:42:49 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:42:49 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:42:49 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:42:49 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:42:49 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/TempHost-wsHost-wsHostPort
+Dec 12, 2017 8:42:49 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:42:50 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:42:50 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/BidProjectServices-BidProjectWebservice-BidProjectWebservicePort
+Dec 12, 2017 8:42:50 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:42:50 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:42:50 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:42:50 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:42:50 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.79
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jun 26 2017 16:25:20 UTC
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.79.0
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 7
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.1
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          x86
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Program Files (x86)\Java\jdk1.7.0_55\jre
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.7.0_55-b13
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\logging.properties
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\endorsed
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79
+Dec 12, 2017 8:52:53 AM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\temp
+Dec 12, 2017 8:52:53 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Dec 12, 2017 8:52:53 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Dec 12, 2017 8:52:54 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized (OpenSSL 1.0.2k  26 Jan 2017)
+Dec 12, 2017 8:52:54 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:52:54 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 669 ms
+Dec 12, 2017 8:52:54 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 12, 2017 8:52:54 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.79
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Bakery.xml
+Dec 12, 2017 8:52:54 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Bakery\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:52:54 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Bakery]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Bakery.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Bakery]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Bakery.xml has finished in 47 ms
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectClient.xml
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectClient.xml has finished in 375 ms
+Dec 12, 2017 8:52:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectServices.xml
+Dec 12, 2017 8:52:56 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:52:57 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:53:01 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/BidProjectServices-BidProjectWebservice-BidProjectWebservicePort
+Dec 12, 2017 8:53:02 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:53:02 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\BidProjectServices.xml has finished in 7,487 ms
+Dec 12, 2017 8:53:02 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ClientWebService.xml
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ClientWebService.xml has finished in 1,482 ms
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProject.xml
+Dec 12, 2017 8:53:03 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\AJP - Project\ForumProject\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:03 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProject]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProject.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProject]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProject.xml has finished in 78 ms
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectClient.xml
+Dec 12, 2017 8:53:03 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\ForumProjectClient\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:03 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectClient]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectClient.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectClient]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectClient.xml has finished in 93 ms
+Dec 12, 2017 8:53:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectServices.xml
+Dec 12, 2017 8:53:03 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\ForumProjectServices\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:04 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectServices]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectServices.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ForumProjectServices]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\ForumProjectServices.xml has finished in 94 ms
+Dec 12, 2017 8:53:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Hello.xml
+Dec 12, 2017 8:53:04 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Hello\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:04 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Hello]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Hello.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Hello]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Hello.xml has finished in 94 ms
+Dec 12, 2017 8:53:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml
+Dec 12, 2017 8:53:05 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:53:05 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:53:06 AM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Dec 12, 2017 8:53:06 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:53:07 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:53:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml has finished in 2,854 ms
+Dec 12, 2017 8:53:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\JavaMail.xml
+Dec 12, 2017 8:53:07 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\JavaMail\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:07 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JavaMail]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\JavaMail.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/JavaMail]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\JavaMail.xml has finished in 47 ms
+Dec 12, 2017 8:53:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\TempHost.xml
+Dec 12, 2017 8:53:09 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:53:10 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:53:11 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/TempHost-wsHost-wsHostPort
+Dec 12, 2017 8:53:11 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\TempHost.xml has finished in 4,570 ms
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\testerJavaScript.xml
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\testerJavaScript.xml has finished in 172 ms
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4.xml
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit4\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4.xml has finished in 16 ms
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4Exercises.xml
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit4Exercises\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4Exercises]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4Exercises.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit4Exercises]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit4Exercises.xml has finished in 62 ms
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5.xml
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit5\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5.xml has finished in 62 ms
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5Servlet.xml
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Exercises\Unit5Servlet\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5Servlet]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5Servlet.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Unit5Servlet]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Unit5Servlet.xml has finished in 94 ms
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Web page.xml
+Dec 12, 2017 8:53:12 AM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base C:\Users\SL2CQH2H6\Desktop\CTI\10 - Advanced Java Programming\Web page re\build\web does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5247)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5436)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:12 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Web page]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:899)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5437)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+SEVERE: Error deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Web page.xml
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Web page]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:903)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:875)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:712)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:2002)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\Web page.xml has finished in 78 ms
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\docs
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\docs has finished in 31 ms
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\examples
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\examples has finished in 156 ms
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\host-manager
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\host-manager has finished in 47 ms
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\manager
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\manager has finished in 31 ms
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\ROOT
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\webapps\ROOT has finished in 31 ms
+Dec 12, 2017 8:53:12 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:53:12 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:53:12 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 18075 ms
+Dec 12, 2017 8:53:14 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:53:14 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:53:14 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:53:15 AM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/HostWebService]
+Dec 12, 2017 8:53:15 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml
+Dec 12, 2017 8:53:16 AM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 12, 2017 8:53:17 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Dec 12, 2017 8:53:18 AM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Dec 12, 2017 8:53:18 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:53:19 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Dec 12, 2017 8:53:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor C:\Users\53FXH1P76\Desktop\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml has finished in 3,946 ms
+Dec 12, 2017 8:53:19 AM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HostWebService]] after start() had already been called. The second call will be ignored.
+Dec 12, 2017 8:53:56 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:53:56 AM WServices.DBClass checkLoginDetails
+INFO: Logon for user - 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:53:56 AM WServices.hostWS validateLoginDetails
+INFO: validating login details of sessionID: 841111136891-15-70-5196-93-921-48372103 with result - true
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:06 AM WServices.hostWS activeItems
+INFO: All items fetch for userID 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:54:14 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:54:14 AM WServices.hostWS selectedItem
+INFO: Item with ID 14selected.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass bidMade
+SEVERE: --------------------- BID MADE ---------------------
+Dec 12, 2017 8:54:25 AM WServices.DBClass bidMade
+INFO: Bid made on item PK = 14
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:25 AM WServices.hostWS activeItems
+INFO: All items fetch for userID 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:54:36 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:54:36 AM WServices.hostWS updates
+INFO: Checking updates for sessionID 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:54:36 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:36 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:54:36 AM WServices.hostWS getUserItems
+INFO: Retrieval of UserItems of user : 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:12 AM WServices.hostWS activeItems
+INFO: All items fetch for userID 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:34 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:34 AM WServices.hostWS activeItems
+INFO: All items fetch for userID 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:56:40 AM WServices.DBClass connect
+INFO: Connection made to database.
+Dec 12, 2017 8:56:40 AM WServices.hostWS updates
+INFO: Checking updates for sessionID 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:56:40 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:40 AM WServices.DBClass connect
+INFO: Connection to database already active.
+Dec 12, 2017 8:56:40 AM WServices.hostWS getUserItems
+INFO: Retrieval of UserItems of user : 841111136891-15-70-5196-93-921-48372103
+Dec 12, 2017 8:57:22 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 12, 2017 8:57:22 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:57:22 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:57:22 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/TempHost-wsHost-wsHostPort
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/BidProjectServices-BidProjectWebservice-BidProjectWebservicePort
+Dec 12, 2017 8:57:22 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Dec 12, 2017 8:57:22 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:57:22 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 12, 2017 8:57:22 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-8082"]
+Dec 12, 2017 8:57:22 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]

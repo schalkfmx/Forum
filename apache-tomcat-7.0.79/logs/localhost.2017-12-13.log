@@ -1,0 +1,145 @@
+Dec 13, 2017 12:57:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Dec 13, 2017 12:57:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Dec 13, 2017 12:57:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@358a80')
+Dec 13, 2017 1:22:57 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [jsp] in context with path [/ClientWebService] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 74 in the jsp file: /Register.jsp
+Topics.Service_Service cannot be resolved to a type
+71:         <%-- start web service invocation --%><hr/>
+72:         <%
+73:             try {
+74:                 Topics.Service_Service service = new Topics.Service_Service();
+75:                 Topics.Service port = service.getServicePort();
+76:                 // TODO initialize WS operation arguments here
+77:                 int userID = 0;
+
+
+An error occurred at line: 74 in the jsp file: /Register.jsp
+Topics.Service_Service cannot be resolved to a type
+71:         <%-- start web service invocation --%><hr/>
+72:         <%
+73:             try {
+74:                 Topics.Service_Service service = new Topics.Service_Service();
+75:                 Topics.Service port = service.getServicePort();
+76:                 // TODO initialize WS operation arguments here
+77:                 int userID = 0;
+
+
+An error occurred at line: 75 in the jsp file: /Register.jsp
+Topics.Service cannot be resolved to a type
+72:         <%
+73:             try {
+74:                 Topics.Service_Service service = new Topics.Service_Service();
+75:                 Topics.Service port = service.getServicePort();
+76:                 // TODO initialize WS operation arguments here
+77:                 int userID = 0;
+78:                 // TODO process result here
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 74 in the jsp file: /Register.jsp
+Topics.Service_Service cannot be resolved to a type
+71:         <%-- start web service invocation --%><hr/>
+72:         <%
+73:             try {
+74:                 Topics.Service_Service service = new Topics.Service_Service();
+75:                 Topics.Service port = service.getServicePort();
+76:                 // TODO initialize WS operation arguments here
+77:                 int userID = 0;
+
+
+An error occurred at line: 74 in the jsp file: /Register.jsp
+Topics.Service_Service cannot be resolved to a type
+71:         <%-- start web service invocation --%><hr/>
+72:         <%
+73:             try {
+74:                 Topics.Service_Service service = new Topics.Service_Service();
+75:                 Topics.Service port = service.getServicePort();
+76:                 // TODO initialize WS operation arguments here
+77:                 int userID = 0;
+
+
+An error occurred at line: 75 in the jsp file: /Register.jsp
+Topics.Service cannot be resolved to a type
+72:         <%
+73:             try {
+74:                 Topics.Service_Service service = new Topics.Service_Service();
+75:                 Topics.Service port = service.getServicePort();
+76:                 // TODO initialize WS operation arguments here
+77:                 int userID = 0;
+78:                 // TODO process result here
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:490)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:663)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:364)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2549)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2538)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+Dec 13, 2017 1:54:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Dec 13, 2017 1:54:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Dec 13, 2017 1:54:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Dec 13, 2017 1:54:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Dec 13, 2017 1:54:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1ab770c')
+Dec 13, 2017 1:59:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Dec 13, 2017 1:59:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Dec 13, 2017 2:01:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Dec 13, 2017 2:01:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Dec 13, 2017 2:01:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1311b66')
+Dec 13, 2017 2:07:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Dec 13, 2017 2:07:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Dec 13, 2017 2:36:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Dec 13, 2017 2:36:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Dec 13, 2017 2:36:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1896f47')
+Dec 13, 2017 4:33:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Dec 13, 2017 4:33:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()

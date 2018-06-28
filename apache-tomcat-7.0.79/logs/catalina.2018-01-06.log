@@ -1,0 +1,62 @@
+Jan 06, 2018 11:33:25 AM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Jan 06, 2018 11:33:27 AM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Jan 06, 2018 11:33:28 AM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Jan 06, 2018 11:33:28 AM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Jan 06, 2018 11:33:28 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/HostWebService] is completed
+Jan 06, 2018 12:17:21 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Jan 06, 2018 12:17:21 PM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Jan 06, 2018 12:17:21 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Jan 06, 2018 12:17:33 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/HostWebService]
+Jan 06, 2018 12:17:33 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor F:\6 project\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml
+Jan 06, 2018 12:17:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 06, 2018 12:18:03 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Jan 06, 2018 12:18:05 PM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Jan 06, 2018 12:18:06 PM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Jan 06, 2018 12:18:06 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Jan 06, 2018 12:18:06 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deployment of configuration descriptor F:\6 project\JavaProjects\apache-tomcat-7.0.79-windows-x86\apache-tomcat-7.0.79\conf\Catalina\localhost\HostWebService.xml has finished in 33,409 ms
+Jan 06, 2018 12:18:06 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HostWebService]] after start() had already been called. The second call will be ignored.
+Jan 06, 2018 12:18:06 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/HostWebService] has started
+Jan 06, 2018 12:18:06 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Jan 06, 2018 12:18:06 PM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Jan 06, 2018 12:18:06 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed
+Jan 06, 2018 12:18:18 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 06, 2018 12:18:44 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextInitialized
+INFO: WSSERVLET12: JAX-WS context listener initializing
+Jan 06, 2018 12:18:46 PM [com.sun.xml.ws.policy.jaxws.PolicyConfigParser]  parse
+INFO: WSP5018: Loaded WSIT configuration from file: jndi:/localhost/HostWebService/WEB-INF/wsit-WServices.hostWS.xml.
+Jan 06, 2018 12:18:47 PM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Jan 06, 2018 12:18:47 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate <init>
+INFO: WSSERVLET14: JAX-WS servlet initializing
+Jan 06, 2018 12:18:47 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/HostWebService] is completed
+Jan 06, 2018 9:20:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/HostWebService] has started
+Jan 06, 2018 9:20:18 PM com.sun.xml.ws.transport.http.servlet.WSServletDelegate destroy
+INFO: WSSERVLET15: JAX-WS servlet destroyed
+Jan 06, 2018 9:20:18 PM com.sun.xml.ws.server.MonitorBase closeMOM
+INFO: Closing Metro monitoring root: com.sun.metro:pp=/,type=WSEndpoint,name=/HostWebService-hostWS-hostWSPort
+Jan 06, 2018 9:20:18 PM com.sun.xml.ws.transport.http.servlet.WSServletContextListener contextDestroyed
+INFO: WSSERVLET13: JAX-WS context listener destroyed

@@ -1,0 +1,52 @@
+Jan 19, 2018 8:21:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Jan 19, 2018 8:21:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Jan 19, 2018 8:21:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:21:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:21:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/WebServiceClient'
+Jan 19, 2018 8:21:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/NRMW59~1/AppData/Local/Temp/context8860123639376768160.xml'
+Jan 19, 2018 8:21:52 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceClient'
+Jan 19, 2018 8:26:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:26:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:26:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/WebServiceClient'
+Jan 19, 2018 8:26:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/NRMW59~1/AppData/Local/Temp/context1390744379119543796.xml'
+Jan 19, 2018 8:26:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceClient'
+Jan 19, 2018 8:38:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:38:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:38:21 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/WebServiceClient'
+Jan 19, 2018 8:38:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/NRMW59~1/AppData/Local/Temp/context2411369190675869464.xml'
+Jan 19, 2018 8:38:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceClient'
+Jan 19, 2018 8:38:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:38:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:38:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/WebServiceClient'
+Jan 19, 2018 8:38:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/NRMW59~1/AppData/Local/Temp/context8683891681478637575.xml'
+Jan 19, 2018 8:38:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceClient'
+Jan 19, 2018 8:47:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 8:47:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/WebServiceServer'
+Jan 19, 2018 9:01:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 19, 2018 9:01:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/WebServiceServer'

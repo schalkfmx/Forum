@@ -1,0 +1,20 @@
+Jan 06, 2018 12:06:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 06, 2018 12:17:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 06, 2018 12:17:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 06, 2018 12:17:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/HostWebService'
+Jan 06, 2018 12:17:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/CHRIST~1/AppData/Local/Temp/context5353731401039702139.xml'
+Jan 06, 2018 12:18:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/HostWebService'
+Jan 06, 2018 12:18:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 06, 2018 12:18:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'
+Jan 06, 2018 9:20:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jan 06, 2018 9:20:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/HostWebService'

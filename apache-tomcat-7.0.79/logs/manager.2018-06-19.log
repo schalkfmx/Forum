@@ -1,0 +1,52 @@
+Jun 19, 2018 3:58:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Jun 19, 2018 3:58:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Jun 19, 2018 3:58:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 3:58:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/WebServiceServer'
+Jun 19, 2018 3:58:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/SCHALK~1/AppData/Local/Temp/context2392633526638785117.xml'
+Jun 19, 2018 3:58:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceServer'
+Jun 19, 2018 3:58:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 3:58:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/WebServiceClient'
+Jun 19, 2018 3:59:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/SCHALK~1/AppData/Local/Temp/context2325564342424669252.xml'
+Jun 19, 2018 3:59:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceClient'
+Jun 19, 2018 4:00:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:00:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:05:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:05:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/WebServiceServer'
+Jun 19, 2018 4:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/SCHALK~1/AppData/Local/Temp/context7413777994358439936.xml'
+Jun 19, 2018 4:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/Server'
+Jun 19, 2018 4:28:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:28:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/WebServiceClient'
+Jun 19, 2018 4:28:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/WebServiceClient'
+Jun 19, 2018 4:29:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:33:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:33:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/Server'
+Jun 19, 2018 4:33:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Jun 19, 2018 4:33:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/Server'
