@@ -63,12 +63,16 @@ public class Server {
             sm.executeUpdate("INSERT INTO Users (Username, Password, EmailAddress, SecurityAnswer, Gender) VALUES('" + uName + "','" + pWord + "','" + email + "','" + securityA + "','" + gender + "')");
             //change boolean variable to true.
             valid = true;
+            //return boolean value
+            return valid;
         } catch (Exception exception) {
             //Catches any exception.
             System.out.println("Register Error..." + exception);
+            //change boolean variable to false.
+            valid = false;
+            //return boolean value
+            return valid;
         }
-        //return boolean value
-        return valid;
     }
 
     //Method checks if the login details entered exists and are correct.
@@ -102,28 +106,58 @@ public class Server {
     @WebMethod(operationName = "getPWord")
     public String getPWord(@WebParam(name = "email") String email, @WebParam(name = "securityA") String securityA) {
         //Create string variable to return.
-        String pWord = "";
+        String pWord = null;
         try {
             //Connect by running the "connect" method.
             connect();
             //Create statement.
             Statement sm = connectionForum.createStatement();
             //Select all the data in the user table where the email matches the email entered.
-            ResultSet rs = sm.executeQuery("SELECT * FROM Users WHERE userEmail = '" + email + "'AND securityA = '" + securityA + "'");
+            ResultSet rs = sm.executeQuery("SELECT * FROM Users WHERE EmailAddress = '" + email + "'AND SecurityAnswer = '" + securityA + "'");
             if (rs.next()) {
                 //Get the password row in the table and store it in return pWord variable.
-                pWord = rs.getString(2);
-                //returns the string
-                return pWord;
+                pWord = "Youre password is: " + rs.getString(2);
             } else {
-                return "No password found!";
+                pWord = "No password found!";
             }
+            //Return string.
+            return pWord;
         } catch (Exception exception) {
             //Catches any exception.
             System.out.println("getPWord Error..." + exception);
+            //Return string.
+            return "Error";
         }
-        //Return string.
-        return pWord;
+    }
+
+    //Method to retrieve user's info from the database.
+    @WebMethod(operationName = "retrieveInfo")
+    public ArrayList retrieveInfo(@WebParam(name = "uName") String uName) {
+        ArrayList<String> info = new ArrayList();
+        try {
+            //Connect by running the "connect" method.
+            connect();
+            //Create statement.
+            Statement sm = connectionForum.createStatement();
+            //Select all the data in the user table where the username matches the username entered.
+            ResultSet rs = sm.executeQuery("SELECT * FROM Users WHERE Username = '" + uName + "'");
+            if (rs.next()) {
+                //Get the info of user in the table and store it in arraylist variable.
+                info.add(rs.getString(1));
+                info.add(rs.getString(2));
+                info.add(rs.getString(3));
+                info.add(rs.getString(4));
+                info.add(rs.getString(5));
+            }
+            //Return arraylist with user's details.
+            return info;
+        } catch (Exception exception) {
+            //Catches any exception.
+            System.out.println("retrieveInfo Error..." + exception);
+            //return empty Arraylist
+            return info;
+        }
+
     }
 
     //Method to update user's info to the database.

@@ -115,12 +115,15 @@ public final class PasswordRecovery_jsp extends org.apache.jasper.runtime.HttpJs
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div id=\"forgotBox\">\n");
-      out.write("            <form action=\"Recover\" method=\"post\">\n");
+      out.write("            <form action=\"RecoverServlet\" method=\"post\">\n");
       out.write("                <label ID=\"heading\">Password Recovery</label>\n");
+      out.write("                <p align = \"center\"> ");
+ if(session.getAttribute("recoveredPWord") != null){out.println(session.getAttribute("recoveredPWord"));} 
+      out.write(" </p>\n");
       out.write("                <label for=\"email\">Email Address</label>\n");
       out.write("                <input type=\"text\" id=\"email\" name=\"email\" placeholder=\"Enter email\">\n");
-      out.write("                <label for=\"sAnswer\">Security answer:</label>\n");
-      out.write("                <input type=\"text\" id=\"sAnswer\" name=\"sAnswer\" placeholder=\"Enter your favourate color\">\n");
+      out.write("                <label for=\"sAnswer\">Favourite color:</label>\n");
+      out.write("                <input type=\"text\" id=\"sAnswer\" name=\"sAnswer\" placeholder=\"Enter your favourite color\">\n");
       out.write("                <input id=\"retrieveBut\" type=\"submit\" value=\"Retrieve\">\n");
       out.write("                <input id=\"loginBut\" type=\"submit\" value=\"Login\" formaction=\"Login.jsp\">\n");
       out.write("            </form>\n");

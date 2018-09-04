@@ -77,9 +77,15 @@
         </style>
     </head>
     <body>
+        <% session.getId(); %>
         <div id="loginBox">
             <form action="loginServlet" method="post">
                 <label ID="heading">LogIn</label>
+                <p align = "center"> <% if (session.getAttribute("valid") == "false") {
+                        out.println("Incorrect username or password");
+                    } else {
+                        out.println("");
+                    }%> </p>
                 <label for="uName">Username:</label>
                 <input type="text" id="uName" name="uName" placeholder="Enter username">
                 <label for="pWord">Password:</label>

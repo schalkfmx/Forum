@@ -115,9 +115,19 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </style>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
+      out.write("        ");
+ session.getId(); 
+      out.write("\n");
       out.write("        <div id=\"loginBox\">\n");
       out.write("            <form action=\"loginServlet\" method=\"post\">\n");
       out.write("                <label ID=\"heading\">LogIn</label>\n");
+      out.write("                <p align = \"center\"> ");
+ if (session.getAttribute("valid") == "false") {
+                        out.println("Incorrect username or password");
+                    } else {
+                        out.println("");
+                    }
+      out.write(" </p>\n");
       out.write("                <label for=\"uName\">Username:</label>\n");
       out.write("                <input type=\"text\" id=\"uName\" name=\"uName\" placeholder=\"Enter username\">\n");
       out.write("                <label for=\"pWord\">Password:</label>\n");

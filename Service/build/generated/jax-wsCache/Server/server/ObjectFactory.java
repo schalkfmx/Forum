@@ -25,8 +25,10 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _PostCommentResponse_QNAME = new QName("http://Server/", "postCommentResponse");
+    private final static QName _RetrieveInfoResponse_QNAME = new QName("http://Server/", "retrieveInfoResponse");
     private final static QName _GetPWord_QNAME = new QName("http://Server/", "getPWord");
     private final static QName _CheckDetailsResponse_QNAME = new QName("http://Server/", "checkDetailsResponse");
+    private final static QName _RetrieveInfo_QNAME = new QName("http://Server/", "retrieveInfo");
     private final static QName _PostTopicResponse_QNAME = new QName("http://Server/", "postTopicResponse");
     private final static QName _Connect_QNAME = new QName("http://Server/", "connect");
     private final static QName _PostTopic_QNAME = new QName("http://Server/", "postTopic");
@@ -65,6 +67,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link RetrieveInfoResponse }
+     * 
+     */
+    public RetrieveInfoResponse createRetrieveInfoResponse() {
+        return new RetrieveInfoResponse();
+    }
+
+    /**
      * Create an instance of {@link PostCommentResponse }
      * 
      */
@@ -86,6 +96,14 @@ public class ObjectFactory {
      */
     public Connect createConnect() {
         return new Connect();
+    }
+
+    /**
+     * Create an instance of {@link RetrieveInfo }
+     * 
+     */
+    public RetrieveInfo createRetrieveInfo() {
+        return new RetrieveInfo();
     }
 
     /**
@@ -258,6 +276,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RetrieveInfoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Server/", name = "retrieveInfoResponse")
+    public JAXBElement<RetrieveInfoResponse> createRetrieveInfoResponse(RetrieveInfoResponse value) {
+        return new JAXBElement<RetrieveInfoResponse>(_RetrieveInfoResponse_QNAME, RetrieveInfoResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetPWord }{@code >}}
      * 
      */
@@ -273,6 +300,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://Server/", name = "checkDetailsResponse")
     public JAXBElement<CheckDetailsResponse> createCheckDetailsResponse(CheckDetailsResponse value) {
         return new JAXBElement<CheckDetailsResponse>(_CheckDetailsResponse_QNAME, CheckDetailsResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RetrieveInfo }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Server/", name = "retrieveInfo")
+    public JAXBElement<RetrieveInfo> createRetrieveInfo(RetrieveInfo value) {
+        return new JAXBElement<RetrieveInfo>(_RetrieveInfo_QNAME, RetrieveInfo.class, null, value);
     }
 
     /**

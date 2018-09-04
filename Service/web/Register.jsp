@@ -99,8 +99,11 @@
     </head>
     <body>
         <div id="registerBox">
-            <form action="Register" method="post">
+            <form action="RegisterServlet" method="post">
                 <label ID="heading">Register</label>
+                <p align = "center"> <% if (session.getAttribute("registerStatus") != null) {
+                        out.println(session.getAttribute("registerStatus"));
+                    }%> </p>
                 <label for="uName">Username:</label>
                 <input type="text" id="uName" name="uName" placeholder="Enter a username">
                 <label for="pWord">Password:</label>
@@ -112,11 +115,11 @@
                 <label for="gender">Gender:</label>
                 <ul id="genderUl">
                     <li id="genderLi">
-                        <input type="radio" id="Male" name="gender">
+                        <input type="radio" id="gender" name="gender" value="male">
                         <label for="Male" class="genderLabel">Male</label>
                     </li>
                     <li id="genderLi">
-                        <input type="radio" id="Female" name="gender">
+                        <input type="radio" id="gender" name="gender" value="female">
                         <label for="Female" class="genderLabel">Female</label>
                     </li>
                 </ul>

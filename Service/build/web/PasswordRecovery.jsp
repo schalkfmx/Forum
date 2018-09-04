@@ -77,12 +77,15 @@
     </head>
     <body>
         <div id="forgotBox">
-            <form action="Recover" method="post">
+            <form action="RecoverServlet" method="post">
                 <label ID="heading">Password Recovery</label>
+                <p align = "center"> <% if (session.getAttribute("recoveredPWord") != null) {
+                        out.println(session.getAttribute("recoveredPWord"));
+                    }%> </p>
                 <label for="email">Email Address</label>
                 <input type="text" id="email" name="email" placeholder="Enter email">
-                <label for="sAnswer">Security answer:</label>
-                <input type="text" id="sAnswer" name="sAnswer" placeholder="Enter your favourate color">
+                <label for="sAnswer">Favourite color:</label>
+                <input type="text" id="sAnswer" name="sAnswer" placeholder="Enter your favourite color">
                 <input id="retrieveBut" type="submit" value="Retrieve">
                 <input id="loginBut" type="submit" value="Login" formaction="Login.jsp">
             </form>

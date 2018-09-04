@@ -59,11 +59,26 @@
                 cursor: pointer;
                 font-weight: bold;
             }
+            #profileBut {
+                width: 10%;
+                padding: 3%;
+                margin-left: 5%;
+                height: 10%;
+                background-color: #008CBA;
+                border: none;
+                display: inline;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
         <div id="topicBox">
             <label ID="heading">Topics</label>
+            <form>
+                <input id="profileBut" type="submit" value="My Profile" formaction="Profile.jsp">
+            </form>
         </div>
     </body>
 </html>

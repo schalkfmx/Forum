@@ -36,6 +36,10 @@
 
 <xs:element name="retrieveCommentsResponse" type="tns:retrieveCommentsResponse" />
 
+<xs:element name="retrieveInfo" type="tns:retrieveInfo" />
+
+<xs:element name="retrieveInfoResponse" type="tns:retrieveInfoResponse" />
+
 <xs:element name="retrieveReplies" type="tns:retrieveReplies" />
 
 <xs:element name="retrieveRepliesResponse" type="tns:retrieveRepliesResponse" />
@@ -47,21 +51,6 @@
 <xs:element name="updateInfo" type="tns:updateInfo" />
 
 <xs:element name="updateInfoResponse" type="tns:updateInfoResponse" />
-
-<xs:complexType name="postComment">
-<xs:sequence>
-<xs:element name="comment" type="xs:string" minOccurs="0" />
-<xs:element name="date" type="xs:string" minOccurs="0" />
-<xs:element name="uName" type="xs:string" minOccurs="0" />
-<xs:element name="topicID" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="postCommentResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:boolean" />
-</xs:sequence>
-</xs:complexType>
 
 <xs:complexType name="postTopic">
 <xs:sequence>
@@ -77,14 +66,6 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="disconnect">
-<xs:sequence />
-</xs:complexType>
-
-<xs:complexType name="disconnectResponse">
-<xs:sequence />
-</xs:complexType>
-
 <xs:complexType name="checkDetails">
 <xs:sequence>
 <xs:element name="uName" type="xs:string" minOccurs="0" />
@@ -95,6 +76,62 @@
 <xs:complexType name="checkDetailsResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPWord">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="securityA" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPWordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveInfo">
+<xs:sequence>
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="connect">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="connectResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="disconnect">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="disconnectResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="postComment">
+<xs:sequence>
+<xs:element name="comment" type="xs:string" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="uName" type="xs:string" minOccurs="0" />
+<xs:element name="topicID" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="postCommentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
 </xs:sequence>
 </xs:complexType>
 
@@ -139,29 +176,6 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="getPWord">
-<xs:sequence>
-<xs:element name="email" type="xs:string" minOccurs="0" />
-<xs:element name="securityA" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="getPWordResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="retrieveTopics">
-<xs:sequence />
-</xs:complexType>
-
-<xs:complexType name="retrieveTopicsResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="register">
 <xs:sequence>
 <xs:element name="uName" type="xs:string" minOccurs="0" />
@@ -178,6 +192,16 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="retrieveTopics">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="retrieveTopicsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="retrieveReplies">
 <xs:sequence />
 </xs:complexType>
@@ -186,13 +210,5 @@
 <xs:sequence>
 <xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded" />
 </xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="connect">
-<xs:sequence />
-</xs:complexType>
-
-<xs:complexType name="connectResponse">
-<xs:sequence />
 </xs:complexType>
 </xs:schema>

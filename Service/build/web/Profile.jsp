@@ -105,22 +105,26 @@
         </style>
     </head>
     <body>
+        
         <div id="profileBox">
-            <form action="updateProfile" method="post">
+            <form method="post">
                 <input id="topicsBut" type="submit" value="Return to Topics" formaction="Topics.jsp">
                 <label ID="heading">My Profile</label>
+                <p align = "center"> <% if (session.getAttribute("updateStatus") != null) {
+                        out.println(session.getAttribute("updateStatus"));
+                    }%> </p>
                 <label for="uName">Username:</label>
-                <input type="text" id="uName" name="uName">
+                <input type="text" id="uName" name="uName" placeholder="<%= session.getAttribute("uName") %>">
                 <label for="pWord">Password:</label>
-                <input type="password" id="pWord" name="pWord">
+                <input type="password" id="pWord" name="pWord" placeholder="<%= session.getAttribute("pWord") %>">
                 <label for="email">Email Address</label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email" placeholder="<%= session.getAttribute("email") %>">
                 <label for="sAnswer">Whats your favourite color?</label>
-                <input type="text" id="sAnswer" name="sAnswer">
+                <input type="text" id="sAnswer" name="sAnswer" placeholder="<%= session.getAttribute("sAnswer") %>">
                 <label for="gender">Gender:</label>
-                <ul id="genderUl">
+                <ul id="genderUl" >
                     <li id="genderLi">
-                        <input type="radio" id="Male" name="gender">
+                        <input type="radio" id="Male" name="gender"  >
                         <label for="Male" class="genderLabel">Male</label>
                     </li>
                     <li id="genderLi">
@@ -128,7 +132,7 @@
                         <label for="Female" class="genderLabel">Female</label>
                     </li>
                 </ul>
-                <input id="updateBut" type="submit" value="Update">
+                <input id="updateBut" type="submit" value="Update" formaction="UpdateInfoServlet">
             </form>
         </div>
     </body>

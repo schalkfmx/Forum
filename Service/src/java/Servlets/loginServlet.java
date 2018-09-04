@@ -1,105 +1,80 @@
-
+/*
+ Name:           loginServlet
+ Description     This servlet contains all the processing when te login form is submitted.
+ Author:         Schalk Mouton
+ Date:           26 July 2018
+ */
 package Servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author Schalk Mouton
- */
 @WebServlet(name = "loginServlet", urlPatterns = {"/loginServlet"})
 public class loginServlet extends HttpServlet {
 
-    
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            boolean valid = checkDetails(request.getParameter("uName"), request.getParameter("pWord"));
-            if (valid == true){
+            HttpSession session = request.getSession(true);
+            String uName = request.getParameter("uName");
+            String pWord = request.getParameter("pWord");
+            boolean valid = checkDetails(uName, pWord);
+            if (valid == true) {
+                session.setAttribute("valid", "true");
                 response.sendRedirect("/Service/Topics.jsp");
-            }else{
-                response.addHeader("x", "Login unsuccesfull");
+                session.setAttribute("uName", uName);
+                loadDetails(session);
+            } else {
+                session.setAttribute("valid", "false");
                 response.sendRedirect("/Service/Login.jsp");
             }
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet loginServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet loginServlet at " + request.getContextPath() + "</h1>");
-            out.println("Username: " + request.getParameter("uName") + "<br/>");
-            out.println("Password: " + request.getParameter("pWord") + "<br/>");
-            out.println("Valid: " + valid + "<br/>");
-            out.println("</body>");
-            out.println("</html>");
         }
     }
-    
-    
-    
-    
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    private static Boolean checkDetails(java.lang.String uName, java.lang.String pWord) {
+        server.Server_Service service = new server.Server_Service();
+        server.Server port = service.getServerPort();
+        return port.checkDetails(uName, pWord);
+    }
+
+    public void loadDetails(HttpSession session) {
+        String uName = (String) session.getAttribute("uName");
+
+        server.Server_Service service = new server.Server_Service();
+        server.Server port = service.getServerPort();
+        ArrayList info = (ArrayList) port.retrieveInfo(uName);
+
+        session.setAttribute("pWord", info.get(1));
+        session.setAttribute("email", info.get(2));
+        session.setAttribute("sAnswer", info.get(3));
+        session.setAttribute("gender", info.get(4));
+        
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
-
-    private static Boolean checkDetails(java.lang.String uName, java.lang.String pWord) {
-        server.Server_Service service = new server.Server_Service();
-        server.Server port = service.getServerPort();
-        return port.checkDetails(uName, pWord);
     }
 
 }

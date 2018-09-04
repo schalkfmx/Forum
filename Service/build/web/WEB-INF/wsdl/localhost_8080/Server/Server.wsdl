@@ -28,17 +28,23 @@
 <message name="retrieveRepliesResponse">
 <part name="parameters" element="tns:retrieveRepliesResponse" />
 </message>
+<message name="retrieveComments">
+<part name="parameters" element="tns:retrieveComments" />
+</message>
+<message name="retrieveCommentsResponse">
+<part name="parameters" element="tns:retrieveCommentsResponse" />
+</message>
 <message name="retrieveTopics">
 <part name="parameters" element="tns:retrieveTopics" />
 </message>
 <message name="retrieveTopicsResponse">
 <part name="parameters" element="tns:retrieveTopicsResponse" />
 </message>
-<message name="retrieveComments">
-<part name="parameters" element="tns:retrieveComments" />
+<message name="updateInfo">
+<part name="parameters" element="tns:updateInfo" />
 </message>
-<message name="retrieveCommentsResponse">
-<part name="parameters" element="tns:retrieveCommentsResponse" />
+<message name="updateInfoResponse">
+<part name="parameters" element="tns:updateInfoResponse" />
 </message>
 <message name="postReply">
 <part name="parameters" element="tns:postReply" />
@@ -52,6 +58,18 @@
 <message name="getPWordResponse">
 <part name="parameters" element="tns:getPWordResponse" />
 </message>
+<message name="postComment">
+<part name="parameters" element="tns:postComment" />
+</message>
+<message name="postCommentResponse">
+<part name="parameters" element="tns:postCommentResponse" />
+</message>
+<message name="retrieveInfo">
+<part name="parameters" element="tns:retrieveInfo" />
+</message>
+<message name="retrieveInfoResponse">
+<part name="parameters" element="tns:retrieveInfoResponse" />
+</message>
 <message name="checkDetails">
 <part name="parameters" element="tns:checkDetails" />
 </message>
@@ -63,18 +81,6 @@
 </message>
 <message name="postTopicResponse">
 <part name="parameters" element="tns:postTopicResponse" />
-</message>
-<message name="postComment">
-<part name="parameters" element="tns:postComment" />
-</message>
-<message name="postCommentResponse">
-<part name="parameters" element="tns:postCommentResponse" />
-</message>
-<message name="updateInfo">
-<part name="parameters" element="tns:updateInfo" />
-</message>
-<message name="updateInfoResponse">
-<part name="parameters" element="tns:updateInfoResponse" />
 </message>
 <portType name="Server">
 <operation name="register">
@@ -93,13 +99,17 @@
 <input wsam:Action="http://Server/Server/retrieveRepliesRequest" message="tns:retrieveReplies" />
 <output wsam:Action="http://Server/Server/retrieveRepliesResponse" message="tns:retrieveRepliesResponse" />
 </operation>
+<operation name="retrieveComments">
+<input wsam:Action="http://Server/Server/retrieveCommentsRequest" message="tns:retrieveComments" />
+<output wsam:Action="http://Server/Server/retrieveCommentsResponse" message="tns:retrieveCommentsResponse" />
+</operation>
 <operation name="retrieveTopics">
 <input wsam:Action="http://Server/Server/retrieveTopicsRequest" message="tns:retrieveTopics" />
 <output wsam:Action="http://Server/Server/retrieveTopicsResponse" message="tns:retrieveTopicsResponse" />
 </operation>
-<operation name="retrieveComments">
-<input wsam:Action="http://Server/Server/retrieveCommentsRequest" message="tns:retrieveComments" />
-<output wsam:Action="http://Server/Server/retrieveCommentsResponse" message="tns:retrieveCommentsResponse" />
+<operation name="updateInfo">
+<input wsam:Action="http://Server/Server/updateInfoRequest" message="tns:updateInfo" />
+<output wsam:Action="http://Server/Server/updateInfoResponse" message="tns:updateInfoResponse" />
 </operation>
 <operation name="postReply">
 <input wsam:Action="http://Server/Server/postReplyRequest" message="tns:postReply" />
@@ -109,6 +119,14 @@
 <input wsam:Action="http://Server/Server/getPWordRequest" message="tns:getPWord" />
 <output wsam:Action="http://Server/Server/getPWordResponse" message="tns:getPWordResponse" />
 </operation>
+<operation name="postComment">
+<input wsam:Action="http://Server/Server/postCommentRequest" message="tns:postComment" />
+<output wsam:Action="http://Server/Server/postCommentResponse" message="tns:postCommentResponse" />
+</operation>
+<operation name="retrieveInfo">
+<input wsam:Action="http://Server/Server/retrieveInfoRequest" message="tns:retrieveInfo" />
+<output wsam:Action="http://Server/Server/retrieveInfoResponse" message="tns:retrieveInfoResponse" />
+</operation>
 <operation name="checkDetails">
 <input wsam:Action="http://Server/Server/checkDetailsRequest" message="tns:checkDetails" />
 <output wsam:Action="http://Server/Server/checkDetailsResponse" message="tns:checkDetailsResponse" />
@@ -116,14 +134,6 @@
 <operation name="postTopic">
 <input wsam:Action="http://Server/Server/postTopicRequest" message="tns:postTopic" />
 <output wsam:Action="http://Server/Server/postTopicResponse" message="tns:postTopicResponse" />
-</operation>
-<operation name="postComment">
-<input wsam:Action="http://Server/Server/postCommentRequest" message="tns:postComment" />
-<output wsam:Action="http://Server/Server/postCommentResponse" message="tns:postCommentResponse" />
-</operation>
-<operation name="updateInfo">
-<input wsam:Action="http://Server/Server/updateInfoRequest" message="tns:updateInfo" />
-<output wsam:Action="http://Server/Server/updateInfoResponse" message="tns:updateInfoResponse" />
 </operation>
 </portType>
 <binding name="ServerPortBinding" type="tns:Server">
@@ -164,6 +174,15 @@
 <soap:body use="literal" />
 </output>
 </operation>
+<operation name="retrieveComments">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
 <operation name="retrieveTopics">
 <soap:operation soapAction="" />
 <input>
@@ -173,7 +192,7 @@
 <soap:body use="literal" />
 </output>
 </operation>
-<operation name="retrieveComments">
+<operation name="updateInfo">
 <soap:operation soapAction="" />
 <input>
 <soap:body use="literal" />
@@ -200,6 +219,24 @@
 <soap:body use="literal" />
 </output>
 </operation>
+<operation name="postComment">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
+<operation name="retrieveInfo">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
 <operation name="checkDetails">
 <soap:operation soapAction="" />
 <input>
@@ -210,24 +247,6 @@
 </output>
 </operation>
 <operation name="postTopic">
-<soap:operation soapAction="" />
-<input>
-<soap:body use="literal" />
-</input>
-<output>
-<soap:body use="literal" />
-</output>
-</operation>
-<operation name="postComment">
-<soap:operation soapAction="" />
-<input>
-<soap:body use="literal" />
-</input>
-<output>
-<soap:body use="literal" />
-</output>
-</operation>
-<operation name="updateInfo">
 <soap:operation soapAction="" />
 <input>
 <soap:body use="literal" />

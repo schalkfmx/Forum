@@ -89,10 +89,10 @@ public interface Server {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "retrieveTopics", targetNamespace = "http://Server/", className = "server.RetrieveTopics")
-    @ResponseWrapper(localName = "retrieveTopicsResponse", targetNamespace = "http://Server/", className = "server.RetrieveTopicsResponse")
-    @Action(input = "http://Server/Server/retrieveTopicsRequest", output = "http://Server/Server/retrieveTopicsResponse")
-    public List<Object> retrieveTopics();
+    @RequestWrapper(localName = "retrieveComments", targetNamespace = "http://Server/", className = "server.RetrieveComments")
+    @ResponseWrapper(localName = "retrieveCommentsResponse", targetNamespace = "http://Server/", className = "server.RetrieveCommentsResponse")
+    @Action(input = "http://Server/Server/retrieveCommentsRequest", output = "http://Server/Server/retrieveCommentsResponse")
+    public List<Object> retrieveComments();
 
     /**
      * 
@@ -101,10 +101,37 @@ public interface Server {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "retrieveComments", targetNamespace = "http://Server/", className = "server.RetrieveComments")
-    @ResponseWrapper(localName = "retrieveCommentsResponse", targetNamespace = "http://Server/", className = "server.RetrieveCommentsResponse")
-    @Action(input = "http://Server/Server/retrieveCommentsRequest", output = "http://Server/Server/retrieveCommentsResponse")
-    public List<Object> retrieveComments();
+    @RequestWrapper(localName = "retrieveTopics", targetNamespace = "http://Server/", className = "server.RetrieveTopics")
+    @ResponseWrapper(localName = "retrieveTopicsResponse", targetNamespace = "http://Server/", className = "server.RetrieveTopicsResponse")
+    @Action(input = "http://Server/Server/retrieveTopicsRequest", output = "http://Server/Server/retrieveTopicsResponse")
+    public List<Object> retrieveTopics();
+
+    /**
+     * 
+     * @param uName
+     * @param email
+     * @param securityA
+     * @param pWord
+     * @param gender
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "updateInfo", targetNamespace = "http://Server/", className = "server.UpdateInfo")
+    @ResponseWrapper(localName = "updateInfoResponse", targetNamespace = "http://Server/", className = "server.UpdateInfoResponse")
+    @Action(input = "http://Server/Server/updateInfoRequest", output = "http://Server/Server/updateInfoResponse")
+    public boolean updateInfo(
+        @WebParam(name = "uName", targetNamespace = "")
+        String uName,
+        @WebParam(name = "pWord", targetNamespace = "")
+        String pWord,
+        @WebParam(name = "email", targetNamespace = "")
+        String email,
+        @WebParam(name = "securityA", targetNamespace = "")
+        String securityA,
+        @WebParam(name = "gender", targetNamespace = "")
+        String gender);
 
     /**
      * 
@@ -151,6 +178,45 @@ public interface Server {
     /**
      * 
      * @param uName
+     * @param topicID
+     * @param date
+     * @param comment
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "postComment", targetNamespace = "http://Server/", className = "server.PostComment")
+    @ResponseWrapper(localName = "postCommentResponse", targetNamespace = "http://Server/", className = "server.PostCommentResponse")
+    @Action(input = "http://Server/Server/postCommentRequest", output = "http://Server/Server/postCommentResponse")
+    public boolean postComment(
+        @WebParam(name = "comment", targetNamespace = "")
+        String comment,
+        @WebParam(name = "date", targetNamespace = "")
+        String date,
+        @WebParam(name = "uName", targetNamespace = "")
+        String uName,
+        @WebParam(name = "topicID", targetNamespace = "")
+        String topicID);
+
+    /**
+     * 
+     * @param uName
+     * @return
+     *     returns java.util.List<java.lang.Object>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "retrieveInfo", targetNamespace = "http://Server/", className = "server.RetrieveInfo")
+    @ResponseWrapper(localName = "retrieveInfoResponse", targetNamespace = "http://Server/", className = "server.RetrieveInfoResponse")
+    @Action(input = "http://Server/Server/retrieveInfoRequest", output = "http://Server/Server/retrieveInfoResponse")
+    public List<Object> retrieveInfo(
+        @WebParam(name = "uName", targetNamespace = "")
+        String uName);
+
+    /**
+     * 
+     * @param uName
      * @param pWord
      * @return
      *     returns java.lang.Boolean
@@ -186,56 +252,5 @@ public interface Server {
         String description,
         @WebParam(name = "date", targetNamespace = "")
         String date);
-
-    /**
-     * 
-     * @param uName
-     * @param topicID
-     * @param date
-     * @param comment
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "postComment", targetNamespace = "http://Server/", className = "server.PostComment")
-    @ResponseWrapper(localName = "postCommentResponse", targetNamespace = "http://Server/", className = "server.PostCommentResponse")
-    @Action(input = "http://Server/Server/postCommentRequest", output = "http://Server/Server/postCommentResponse")
-    public boolean postComment(
-        @WebParam(name = "comment", targetNamespace = "")
-        String comment,
-        @WebParam(name = "date", targetNamespace = "")
-        String date,
-        @WebParam(name = "uName", targetNamespace = "")
-        String uName,
-        @WebParam(name = "topicID", targetNamespace = "")
-        String topicID);
-
-    /**
-     * 
-     * @param uName
-     * @param email
-     * @param securityA
-     * @param pWord
-     * @param gender
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updateInfo", targetNamespace = "http://Server/", className = "server.UpdateInfo")
-    @ResponseWrapper(localName = "updateInfoResponse", targetNamespace = "http://Server/", className = "server.UpdateInfoResponse")
-    @Action(input = "http://Server/Server/updateInfoRequest", output = "http://Server/Server/updateInfoResponse")
-    public boolean updateInfo(
-        @WebParam(name = "uName", targetNamespace = "")
-        String uName,
-        @WebParam(name = "pWord", targetNamespace = "")
-        String pWord,
-        @WebParam(name = "email", targetNamespace = "")
-        String email,
-        @WebParam(name = "securityA", targetNamespace = "")
-        String securityA,
-        @WebParam(name = "gender", targetNamespace = "")
-        String gender);
 
 }
